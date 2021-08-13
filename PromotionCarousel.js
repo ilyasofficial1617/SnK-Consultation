@@ -31,7 +31,7 @@ const PromotionCarousel = ({data}) => {
             itemWidth={CAROUSEL_ITEM_WIDTH}
             loop={true}
             enableSnap={true}
-            
+             
         />
     )
 }
