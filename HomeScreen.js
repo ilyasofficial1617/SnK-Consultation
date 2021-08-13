@@ -24,7 +24,6 @@ const dataBanner = [
 const HomeScreen = () => {
     return(
         <View style={styles.container}>
-            <Text>This is Home Screen</Text>
             <PromotionCarousel data={dataBanner}/>
         </View>
     );
@@ -39,6 +38,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#bbb',
       alignItems: 'center',
       justifyContent: 'center',
-      paddingHorizontal:'3%'
+      paddingHorizontal:'3%',
+      paddingVertical:'3%'
     },
   });
