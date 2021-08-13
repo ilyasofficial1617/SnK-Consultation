@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Dimensions, Image, StyleSheet} from 'react-native';
 import Carousel, { Pagination } from 'react-native-snap-carousel';
-import FastImage from 'react-native-fast-image';
+import sampleData from './SampleData';
 
 export const SCREEN_WIDTH = Dimensions.get('window').width;
 export const CAROUSEL_VERTICAL_OUTPUT = 50;
@@ -19,19 +19,19 @@ const renderPagination = () => (
     />
 );
 
-const PromotionCarousel = ({data}) => {
+const PromotionCarousel = () => {
     const [activeSlide, setActiveSlide] = useState(0); 
     
     return (
         <Carousel
-            data={data}
+            data={sampleData.banners}
             renderItem={renderItem}
             onSnapToItem={(index) => setActiveSlide(index)} // we will update active slide index
             sliderWidth={SCREEN_WIDTH}
             itemWidth={CAROUSEL_ITEM_WIDTH}
             loop={true}
             enableSnap={true}
-             
+            
         />
     )
 }

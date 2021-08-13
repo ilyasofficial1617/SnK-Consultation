@@ -2,7 +2,7 @@
 ~~create github~~
 ~~create bare screen~~
 ~~page 1 carousel~~
-collecting dummy data
+~~collecting dummy data~~
 page 1 speciality list
 page 1 doctor list
 page 2 speciality grid
