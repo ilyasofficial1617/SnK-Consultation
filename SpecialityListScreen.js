@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-const SpecialityScreen = () => {
+const SpecialityListScreen = () => {
     return(
         <View>
             <Text>
@@ -12,4 +12,4 @@ const SpecialityScreen = () => {
     
 }
 
-export default SpecialityScreen;
+export default SpecialityListScreen;

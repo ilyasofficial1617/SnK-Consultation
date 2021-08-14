@@ -12,12 +12,6 @@ const renderItem = ({item}) => (
         <Image style={styles.image} source={{uri:item.imageUrl}}/>
     </View>
 );
-const renderPagination = () => (
-    <Pagination
-        dotsLength={carouselData.length}
-        activeDotIndex={activeSlide}
-    />
-);
 
 const PromotionCarousel = () => {
     const [activeSlide, setActiveSlide] = useState(0); 
@@ -26,12 +20,11 @@ const PromotionCarousel = () => {
         <Carousel
             data={sampleData.banners}
             renderItem={renderItem}
-            onSnapToItem={(index) => setActiveSlide(index)} // we will update active slide index
             sliderWidth={SCREEN_WIDTH}
             itemWidth={CAROUSEL_ITEM_WIDTH}
             loop={true}
             enableSnap={true}
-            
+            containerCustomStyle={{flexGrow:0}}
         />
     )
 }
