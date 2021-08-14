@@ -3,31 +3,29 @@ import { FlatList, StyleSheet, Text, View, Image, Dimensions, TouchableOpacity }
 import PromotionCarousel from './PromotionCarousel';
 import sampleData from './SampleData';
 
-const SCREEN_WIDTH = Dimensions.get('window').width;
-
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
     return(
         <View style={styles.container}>
             <PromotionCarousel/>
-            <SpecialityBit/>
-            <DoctorsBit/>
+            <SpecialityBit navigation={navigation}/>
+            <DoctorsBit navigation={navigation}/>
         </View>
     );
 }
 
 export default HomeScreen;
 
-const SpecialityBit = () => {
+const SpecialityBit = ({navigation}) => {
     const specialities = sampleData.specialities.slice(0,3);
 
     return(
         <View style={{flex: 2, flexWrap: 'wrap', flexDirection:'row'}}>
             {
                 specialities.map((item)=>(
-                    <View style={{width: '30%', backgroundColor:'white', flexGrow:1, alignItems:'center'}}>
-                        <Image style={{width:100, height:100}} source={{uri:'https://drive.google.com/uc?export=download&id=1McZiN7QGMoUkT3ExHrFYuUBhE8Lnp88S'}}/>
+                    <View key={item.id} style={{width: '30%', backgroundColor:'white', flexGrow:1, alignItems:'center'}}>
+                        <Image style={{width:100, height:100}} source={{uri:sampleData.doctor_icon}}/>
                         <Text style={{textAlign:'center'}}>
-                            {item}
+                            {item.speciality}
                         </Text>
                     </View>
                 )
@@ -35,20 +33,25 @@ const SpecialityBit = () => {
                 
             }
             <View style={{width: '30%', backgroundColor:'white', flexGrow:1, alignContent:'flex-end'}}>
-                <Text style={{textAlign:'right'}}>See All</Text>
+                <TouchableOpacity onPress={()=>{
+                    navigation.navigate('Speciality List');
+                }}>
+                    <Text style={{textAlign:'right'}}>See All</Text>
+                </TouchableOpacity>
+                
             </View>
         </View>
     )
 }
 
-const DoctorsBit = () => {
+const DoctorsBit = ({navigation}) => {
     const doctors = sampleData.doctors.slice(0,5);
     return(
         <View style={{flex: 3, flexWrap: 'wrap', flexDirection:'row'}}>
             {
                 doctors.map((item)=>(
                     <View style={{width: '100%', backgroundColor:'white', flexDirection:'row', alignItems:'center'}}>
-                        <Image style={{width:30, height:30}} source={{uri:'https://drive.google.com/uc?export=download&id=1McZiN7QGMoUkT3ExHrFYuUBhE8Lnp88S'}}/>
+                        <Image style={{width:30, height:30}} source={{uri:sampleData.doctor_icon}}/>
                         <Text>
                             {item.doctor_name}
                         </Text>
@@ -57,9 +60,11 @@ const DoctorsBit = () => {
                 )
                 
             }
-            <View style={{width: '30%', backgroundColor:'white', flexGrow:1, alignContent:'flex-end'}}>
+            <TouchableOpacity onPress={()=>{
+                    navigation.navigate('Doctor List');
+                }} style={{width: '30%', backgroundColor:'white', flexGrow:1, alignContent:'flex-end'}}>
                 <Text style={{textAlign:'right'}}>See All</Text>
-            </View>
+            </TouchableOpacity>
         </View>
     );
 }
