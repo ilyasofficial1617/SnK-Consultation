@@ -14,6 +14,29 @@ const banners = [
     }
 ]
 
+const specialities = [
+    'Family Physician',
+    'Internal Medicine Physician',
+    'Pediatrician',
+    'Gynecologist',
+    'Cardiologist',
+    'Oncologist',
+    'Gastroenterologist',
+    'Pulmonologist',
+    'Infectious Disease Physician',
+    'Nephrologist',
+    'Endocrinologist',
+    'Ophthalmologist',
+    'Otolaryngo logist',
+    'Dermatologist',
+    'Psychiatrist',
+    'Neurologist',
+    'Radiologist',
+    'Anesthesiologist',
+    'Surgeon',
+    'Physician Executive',
+]
+
 const doctors = [
     {
       "speciality": "Family Physician",
@@ -657,6 +680,6 @@ const doctors = [
     }
   ]
 
-const sampleData = {banners, doctors}
+const sampleData = {banners, doctors, specialities}
 
 export default sampleData;
