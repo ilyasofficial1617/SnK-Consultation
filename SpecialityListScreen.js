@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { FlatList, StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 import sampleData from './SampleData';
 import SearchBar from "react-native-dynamic-search-bar";
-import { color } from 'react-native-elements/dist/helpers';
+import { useTheme } from '@react-navigation/native';
 
 const SpecialityListScreen = ({navigation}) => {
+    const { colors } = useTheme();
     const [refresh, setRefresh] = useState(false);
     const [dataCache, setDataCache] = useState(sampleData.specialities.slice());
 
@@ -26,7 +27,7 @@ const SpecialityListScreen = ({navigation}) => {
     
     const ItemDesign = (item) =>{
         return(
-            <TouchableOpacity style={styles.flatlistItem} 
+            <TouchableOpacity style={[styles.flatlistItem,{backgroundColor:colors.backgroundAlternative,borderColor:colors.backgroundAlternative,}]}
                 onPress={()=>{
                     console.log(item.speciality)
                     navigation.navigate('Doctor List',{specialityName : item.speciality});
@@ -39,10 +40,11 @@ const SpecialityListScreen = ({navigation}) => {
     }    
 
     return(
-        <View style={{flex: 1, backgroundColor: '#bbb', alignItems: 'center', paddingVertical:'3%',justifyContent:'space-around'}}>
+        <View style={{flex: 1, backgroundColor: colors.background, alignItems: 'center', paddingVertical:'3%',justifyContent:'space-around'}}>
             <SearchBar
                 placeholder="Search here"
                 onChangeText={ text => filterSpecialities(text)}
+                style={{marginBottom:5}}
             />
             <FlatList
                     removeClippedSubviews={false}
@@ -77,10 +79,11 @@ const styles = StyleSheet.create({
         flexDirection:'column',
         alignItems:'center',
         marginHorizontal:'1%',
-        marginVertical:'2%',
-        borderColor:'black',
+        marginVertical:'1%',
         borderWidth:1,
-        padding:5
+        borderRadius:5,
+        padding:5,
+        
     }
   });
   
