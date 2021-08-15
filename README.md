@@ -18,4 +18,4 @@
 ~~theme styleing~~
 ~~theme color choosing~~
 github wiki 
-bug page 3 speciality into doctor list, data supposed to be filtered consistently
+~~bug page 3 speciality into doctor list, data supposed to be filtered consistently~~

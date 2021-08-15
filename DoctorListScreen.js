@@ -29,11 +29,11 @@ const DoctorListScreen = ({route, navigation}) => {
 
     const filterName = (keyword) => {
         const result = []
-        for (let i = 0; i < sampleData.doctors.length; i++) {
-            let check = sampleData.doctors[i].doctorName.toLowerCase();
+        for (let i = 0; i < dataFilteredSpeciality.length; i++) {
+            let check = dataFilteredSpeciality[i].doctorName.toLowerCase();
             let keycheck = keyword.toLowerCase();
             if(check.includes(keycheck)){
-                result.push(sampleData.doctors[i])
+                result.push(dataFilteredSpeciality[i])
             }
         }
         setDataFilteredName(result)
