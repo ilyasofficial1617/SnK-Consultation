@@ -25,6 +25,7 @@ const PromotionCarousel = () => {
             loop={true}
             enableSnap={true}
             containerCustomStyle={{flexGrow:0}}
+            slideStyle={{borderRadius:6,overflow:'hidden'}}
         />
     )
 }
@@ -37,6 +38,6 @@ const styles = StyleSheet.create({
         flex:1
     },
     item: {
-        flexDirection: 'row'
+        flexDirection: 'row',
     }
   });
