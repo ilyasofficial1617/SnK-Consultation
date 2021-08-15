@@ -44,7 +44,9 @@ const DoctorListScreen = ({route, navigation}) => {
     
     const ItemDesign = (item) =>{
         return(
-            <TouchableOpacity style={styles.flatlistItem}> 
+            <TouchableOpacity onPress={()=>{
+                navigation.navigate('Doctor Booking',{doctorId : item.id});
+            }} style={styles.flatlistItem}> 
                 <Image style={{width:60, height:60}} source={{uri:sampleData.doctorIcon}}/>
                 <View style={{flexDirection:'column'}}>
                     <Text>{item.doctorName}</Text>

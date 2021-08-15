@@ -8,11 +8,12 @@
 page 1 fine tune layout
 ~~page 2 speciality grid~~
 page 2 fine tune layout
-page 3 doctor list
-page 4 info & button
-page 2 search speciality
-page 3 search name
+~~page 3 doctor list~~
+~~page 4 info & button~~
+~~page 2 search speciality~~
+~~page 3 search name~~
 page 4 message wa
+page 4 fine tune layout
 theme styleing
 theme color choosing
 github wiki 

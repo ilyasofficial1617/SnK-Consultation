@@ -54,7 +54,7 @@ const DoctorsBit = ({navigation}) => {
             {
                 doctors.map((item)=>(
                     <TouchableOpacity onPress={()=>{
-                        navigation.navigate('Doctor Booking');
+                        navigation.navigate('Doctor Booking',{doctorId : item.id});
                     }} key={item.id} style={{width: '100%', backgroundColor:'white', flexDirection:'row', alignItems:'center'}}>
                         <Image style={{width:30, height:30}} source={{uri:sampleData.doctorIcon}}/>
                         <Text>

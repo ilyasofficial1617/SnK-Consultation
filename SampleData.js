@@ -18,6 +18,8 @@ const doctorIcon = 'https://drive.google.com/uc?export=download&id=1McZiN7QGMoUk
 
 const arrowIcon = 'https://drive.google.com/uc?export=download&id=1IfP6n6QqIoVRaw_czw_t6D1TTZhBCZiG'
 
+const loremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et volutpat diam. Ut vehicula placerat lorem sit amet rhoncus. Nulla consectetur tincidunt purus. Duis volutpat sollicitudin nisi, ac faucibus neque auctor a. Etiam at metus nec purus scelerisque scelerisque id at nisi. Praesent maximus nisi in urna sagittis pharetra. Integer mi purus, vehicula at nibh et, fringilla ullamcorper ante. Mauris erat urna, fermentum sed condimentum et, tincidunt vel justo. Duis mi nibh, mollis eget est vehicula, faucibus sagittis dui. Morbi sit amet libero tempus, tempus nibh vitae, facilisis nibh. Nam vel massa turpis.'
+
 const specialities = [
     {
       "id": 1,
@@ -904,6 +906,6 @@ const doctors = [
     }
   ]
 
-const sampleData = {banners, doctors, specialities, doctorIcon, arrowIcon}
+const sampleData = {banners, doctors, specialities, doctorIcon, arrowIcon, loremIpsum}
 
 export default sampleData;
