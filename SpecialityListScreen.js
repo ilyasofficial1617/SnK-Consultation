@@ -26,8 +26,13 @@ const SpecialityListScreen = ({navigation}) => {
     
     const ItemDesign = (item) =>{
         return(
-            <TouchableOpacity style={styles.flatlistItem}> 
-                <Image style={{width:100, height:100}} source={{uri:sampleData.doctor_icon}}/>
+            <TouchableOpacity style={styles.flatlistItem} 
+                onPress={()=>{
+                    console.log(item.speciality)
+                    navigation.navigate('Doctor List',{specialityName : item.speciality});
+                }}
+                > 
+                <Image style={{width:100, height:100}} source={{uri:sampleData.doctorIcon}}/>
                 <Text style={{textAlign:'center', }} >{item.speciality}</Text>
             </TouchableOpacity>
         );

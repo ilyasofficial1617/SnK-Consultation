@@ -2,6 +2,7 @@ import React from 'react';
 import { FlatList, StyleSheet, Text, View, Image, Dimensions, TouchableOpacity } from 'react-native';
 import PromotionCarousel from './PromotionCarousel';
 import sampleData from './SampleData';
+import { useNavigation, useRoute } from '@react-navigation/native';
 
 const HomeScreen = ({navigation}) => {
     return(
@@ -22,12 +23,14 @@ const SpecialityBit = ({navigation}) => {
         <View style={{flex: 2, flexWrap: 'wrap', flexDirection:'row'}}>
             {
                 specialities.map((item)=>(
-                    <View key={item.id} style={{width: '30%', backgroundColor:'white', flexGrow:1, alignItems:'center'}}>
-                        <Image style={{width:100, height:100}} source={{uri:sampleData.doctor_icon}}/>
+                    <TouchableOpacity onPress={()=>{
+                        navigation.navigate('Doctor List',{ specialityName : item.speciality});
+                    }} key={item.id} style={{width: '30%', backgroundColor:'white', flexGrow:1, alignItems:'center'}}>
+                        <Image style={{width:100, height:100}} source={{uri:sampleData.doctorIcon}}/>
                         <Text style={{textAlign:'center'}}>
                             {item.speciality}
                         </Text>
-                    </View>
+                    </TouchableOpacity>
                 )
                 )
                 
@@ -50,12 +53,14 @@ const DoctorsBit = ({navigation}) => {
         <View style={{flex: 3, flexWrap: 'wrap', flexDirection:'row'}}>
             {
                 doctors.map((item)=>(
-                    <View style={{width: '100%', backgroundColor:'white', flexDirection:'row', alignItems:'center'}}>
-                        <Image style={{width:30, height:30}} source={{uri:sampleData.doctor_icon}}/>
+                    <TouchableOpacity onPress={()=>{
+                        navigation.navigate('Doctor Booking');
+                    }} key={item.id} style={{width: '100%', backgroundColor:'white', flexDirection:'row', alignItems:'center'}}>
+                        <Image style={{width:30, height:30}} source={{uri:sampleData.doctorIcon}}/>
                         <Text>
-                            {item.doctor_name}
+                            {item.doctorName}
                         </Text>
-                    </View>
+                    </TouchableOpacity>
                 )
                 )
                 

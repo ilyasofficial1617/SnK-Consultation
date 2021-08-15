@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 const DoctorBookingScreen = () => {
     return(
-        <View>
+        <View style={{flex:1}}>
             <Text>
                 This is Doctor Booking Screen
             </Text>
