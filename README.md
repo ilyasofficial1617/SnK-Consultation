@@ -17,3 +17,4 @@ page 1 fine tune layout
 ~~theme styleing~~
 ~~theme color choosing~~
 github wiki 
+bug page 3 speciality into doctor list, data supposed to be filtered consistently

@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { FlatList, StyleSheet, Text, View, TouchableOpacity, Image, Dimensions} from 'react-native';
 import sampleData from './SampleData';
 import SearchBar from "react-native-dynamic-search-bar";
-import { color } from 'react-native-elements/dist/helpers';
 import { useNavigation, useRoute } from '@react-navigation/native';
+import { useTheme } from '@react-navigation/native';
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
 const DoctorListScreen = ({route, navigation}) => {
+    const { colors } = useTheme();
     const {specialityName} = route.params
     const [refresh, setRefresh] = useState(false);
     const [dataCache, setDataCache] = useState(sampleData.doctors.slice());
@@ -46,9 +47,9 @@ const DoctorListScreen = ({route, navigation}) => {
         return(
             <TouchableOpacity onPress={()=>{
                 navigation.navigate('Doctor Booking',{doctorId : item.id});
-            }} style={styles.flatlistItem}> 
+            }} style={[styles.flatlistItem, {backgroundColor:colors.backgroundAlternative}]}> 
                 <Image style={{width:60, height:60}} source={{uri:sampleData.doctorIcon}}/>
-                <View style={{flexDirection:'column'}}>
+                <View style={{flexDirection:'column', paddingHorizontal:10}}>
                     <Text>{item.doctorName}</Text>
                     <Text>{item.speciality}</Text>
                 </View>
@@ -59,10 +60,11 @@ const DoctorListScreen = ({route, navigation}) => {
     }    
 
     return(
-        <View style={{flex: 1, backgroundColor: '#bbb', alignItems: 'center', paddingVertical:'3%'}}>
+        <View style={{flex: 1, backgroundColor: colors.background, alignItems: 'center', paddingVertical:'3%'}}>
             <SearchBar
                 placeholder="Search here"
                 onChangeText={ text => filterName(text)}
+                style={{marginBottom:5}}
             />
             <FlatList
                     removeClippedSubviews={false}
@@ -80,13 +82,6 @@ const DoctorListScreen = ({route, navigation}) => {
 export default DoctorListScreen;
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#bbb',
-        alignItems: 'center',
-        paddingHorizontal:'3%',
-        paddingVertical:'3%',
-    },
     flatlistContainer:{
         width:SCREEN_WIDTH*97/100,
     },
@@ -95,9 +90,8 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         alignItems:'center',
         marginHorizontal:'1%',
-        marginVertical:'2%',
-        borderColor:'black',
-        borderWidth:1,
+        marginVertical:'1%',
+        borderRadius:5,
         padding:5
     }
   });
