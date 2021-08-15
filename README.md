@@ -27,6 +27,7 @@ github wiki :
     - SpecialityListScreen
     - DoctorListScreen
   - explain that detail will be in comment in code files
+  - explain sampleData
 
 add more comment on obscure code
 separate cluttered styling
