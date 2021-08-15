@@ -14,7 +14,9 @@ const banners = [
     }
 ]
 
-const doctor_icon = 'https://drive.google.com/uc?export=download&id=1McZiN7QGMoUkT3ExHrFYuUBhE8Lnp88S';
+const doctorIcon = 'https://drive.google.com/uc?export=download&id=1McZiN7QGMoUkT3ExHrFYuUBhE8Lnp88S';
+
+const arrowIcon = 'https://drive.google.com/uc?export=download&id=1IfP6n6QqIoVRaw_czw_t6D1TTZhBCZiG'
 
 const specialities = [
     {
@@ -103,805 +105,805 @@ const doctors = [
     {
       "id": 1,
       "speciality": "Family Physician",
-      "doctor_name": "Tomeka Hebel"
+      "doctorName": "Tomeka Hebel"
     },
     {
       "id": 2,
       "speciality": "Internal Medicine Physician",
-      "doctor_name": "Noelle Perrotti"
+      "doctorName": "Noelle Perrotti"
     },
     {
       "id": 3,
       "speciality": "Pediatrician",
-      "doctor_name": "Kimberlie Wingerter"
+      "doctorName": "Kimberlie Wingerter"
     },
     {
       "id": 4,
       "speciality": "Gynecologist",
-      "doctor_name": "Kasie Magwood"
+      "doctorName": "Kasie Magwood"
     },
     {
       "id": 5,
       "speciality": "Cardiologist",
-      "doctor_name": "Marie Stroman"
+      "doctorName": "Marie Stroman"
     },
     {
       "id": 6,
       "speciality": "Oncologist",
-      "doctor_name": "Thad Quan"
+      "doctorName": "Thad Quan"
     },
     {
       "id": 7,
       "speciality": "Gastroenterologist",
-      "doctor_name": "Karoline Elkington"
+      "doctorName": "Karoline Elkington"
     },
     {
       "id": 8,
       "speciality": "Pulmonologist",
-      "doctor_name": "Chris Mcbath"
+      "doctorName": "Chris Mcbath"
     },
     {
       "id": 9,
       "speciality": "Infectious Disease Physician",
-      "doctor_name": "Priscilla Gilfillan"
+      "doctorName": "Priscilla Gilfillan"
     },
     {
       "id": 10,
       "speciality": "Nephrologist",
-      "doctor_name": "Doreatha Estridge"
+      "doctorName": "Doreatha Estridge"
     },
     {
       "id": 11,
       "speciality": "Endocrinologist",
-      "doctor_name": "Delsie Dudding"
+      "doctorName": "Delsie Dudding"
     },
     {
       "id": 12,
       "speciality": "Ophthalmologist",
-      "doctor_name": "Gerda Wolf"
+      "doctorName": "Gerda Wolf"
     },
     {
       "id": 13,
       "speciality": "Otolaryngo logist",
-      "doctor_name": "Drema Hendrix"
+      "doctorName": "Drema Hendrix"
     },
     {
       "id": 14,
       "speciality": "Dermatologist",
-      "doctor_name": "Nisha Gerner"
+      "doctorName": "Nisha Gerner"
     },
     {
       "id": 15,
       "speciality": "Psychiatrist",
-      "doctor_name": "Susannah Gravatt"
+      "doctorName": "Susannah Gravatt"
     },
     {
       "id": 16,
       "speciality": "Neurologist",
-      "doctor_name": "Rusty Butler"
+      "doctorName": "Rusty Butler"
     },
     {
       "id": 17,
       "speciality": "Radiologist",
-      "doctor_name": "Dayna Rolf"
+      "doctorName": "Dayna Rolf"
     },
     {
       "id": 18,
       "speciality": "Anesthesiologist",
-      "doctor_name": "Corina Nye"
+      "doctorName": "Corina Nye"
     },
     {
       "id": 19,
       "speciality": "Surgeon",
-      "doctor_name": "Flossie Fahy"
+      "doctorName": "Flossie Fahy"
     },
     {
       "id": 20,
       "speciality": "Physician Executive",
-      "doctor_name": "Nona Alamo"
+      "doctorName": "Nona Alamo"
     },
     {
       "id": 21,
       "speciality": "Family Physician",
-      "doctor_name": "Alphonso Verdugo"
+      "doctorName": "Alphonso Verdugo"
     },
     {
       "id": 22,
       "speciality": "Internal Medicine Physician",
-      "doctor_name": "Sophia Stansell"
+      "doctorName": "Sophia Stansell"
     },
     {
       "id": 23,
       "speciality": "Pediatrician",
-      "doctor_name": "Amie Stowell"
+      "doctorName": "Amie Stowell"
     },
     {
       "id": 24,
       "speciality": "Gynecologist",
-      "doctor_name": "Hung Kellough"
+      "doctorName": "Hung Kellough"
     },
     {
       "id": 25,
       "speciality": "Cardiologist",
-      "doctor_name": "Retta Syed"
+      "doctorName": "Retta Syed"
     },
     {
       "id": 26,
       "speciality": "Oncologist",
-      "doctor_name": "Gabrielle Atienza"
+      "doctorName": "Gabrielle Atienza"
     },
     {
       "id": 27,
       "speciality": "Gastroenterologist",
-      "doctor_name": "Carole Nickel"
+      "doctorName": "Carole Nickel"
     },
     {
       "id": 28,
       "speciality": "Pulmonologist",
-      "doctor_name": "Janet Harper"
+      "doctorName": "Janet Harper"
     },
     {
       "id": 29,
       "speciality": "Infectious Disease Physician",
-      "doctor_name": "Clarissa Slagle"
+      "doctorName": "Clarissa Slagle"
     },
     {
       "id": 30,
       "speciality": "Nephrologist",
-      "doctor_name": "Shawna Markum"
+      "doctorName": "Shawna Markum"
     },
     {
       "id": 31,
       "speciality": "Endocrinologist",
-      "doctor_name": "Athena Worden"
+      "doctorName": "Athena Worden"
     },
     {
       "id": 32,
       "speciality": "Ophthalmologist",
-      "doctor_name": "Andy Nieman"
+      "doctorName": "Andy Nieman"
     },
     {
       "id": 33,
       "speciality": "Otolaryngo logist",
-      "doctor_name": "Tangela Mcadams"
+      "doctorName": "Tangela Mcadams"
     },
     {
       "id": 34,
       "speciality": "Dermatologist",
-      "doctor_name": "Nery Brewington"
+      "doctorName": "Nery Brewington"
     },
     {
       "id": 35,
       "speciality": "Psychiatrist",
-      "doctor_name": "Jenniffer Winsor"
+      "doctorName": "Jenniffer Winsor"
     },
     {
       "id": 36,
       "speciality": "Neurologist",
-      "doctor_name": "Dale Buttry"
+      "doctorName": "Dale Buttry"
     },
     {
       "id": 37,
       "speciality": "Radiologist",
-      "doctor_name": "Lonna Fancher"
+      "doctorName": "Lonna Fancher"
     },
     {
       "id": 38,
       "speciality": "Anesthesiologist",
-      "doctor_name": "Yvonne Hendrie"
+      "doctorName": "Yvonne Hendrie"
     },
     {
       "id": 39,
       "speciality": "Surgeon",
-      "doctor_name": "Mitzie Kiser"
+      "doctorName": "Mitzie Kiser"
     },
     {
       "id": 40,
       "speciality": "Physician Executive",
-      "doctor_name": "Matilde Denison"
+      "doctorName": "Matilde Denison"
     },
     {
       "id": 41,
       "speciality": "Family Physician",
-      "doctor_name": "Zora Lingerfelt"
+      "doctorName": "Zora Lingerfelt"
     },
     {
       "id": 42,
       "speciality": "Internal Medicine Physician",
-      "doctor_name": "Corazon Paddock"
+      "doctorName": "Corazon Paddock"
     },
     {
       "id": 43,
       "speciality": "Pediatrician",
-      "doctor_name": "Casie Sevin"
+      "doctorName": "Casie Sevin"
     },
     {
       "id": 44,
       "speciality": "Gynecologist",
-      "doctor_name": "Tempie Triolo"
+      "doctorName": "Tempie Triolo"
     },
     {
       "id": 45,
       "speciality": "Cardiologist",
-      "doctor_name": "Irmgard Cornelius"
+      "doctorName": "Irmgard Cornelius"
     },
     {
       "id": 46,
       "speciality": "Oncologist",
-      "doctor_name": "Liane Burkhard"
+      "doctorName": "Liane Burkhard"
     },
     {
       "id": 47,
       "speciality": "Gastroenterologist",
-      "doctor_name": "Betsy Thrailkill"
+      "doctorName": "Betsy Thrailkill"
     },
     {
       "id": 48,
       "speciality": "Pulmonologist",
-      "doctor_name": "Tyler Bankhead"
+      "doctorName": "Tyler Bankhead"
     },
     {
       "id": 49,
       "speciality": "Infectious Disease Physician",
-      "doctor_name": "Marylouise Alejandre"
+      "doctorName": "Marylouise Alejandre"
     },
     {
       "id": 50,
       "speciality": "Nephrologist",
-      "doctor_name": "Eliseo Donnellan"
+      "doctorName": "Eliseo Donnellan"
     },
     {
       "id": 51,
       "speciality": "Endocrinologist",
-      "doctor_name": "Kristine Widger"
+      "doctorName": "Kristine Widger"
     },
     {
       "id": 52,
       "speciality": "Ophthalmologist",
-      "doctor_name": "Guillermina Gilliard"
+      "doctorName": "Guillermina Gilliard"
     },
     {
       "id": 53,
       "speciality": "Otolaryngo logist",
-      "doctor_name": "Alpha Prideaux"
+      "doctorName": "Alpha Prideaux"
     },
     {
       "id": 54,
       "speciality": "Dermatologist",
-      "doctor_name": "Gita Basso"
+      "doctorName": "Gita Basso"
     },
     {
       "id": 55,
       "speciality": "Psychiatrist",
-      "doctor_name": "Lachelle Stoehr"
+      "doctorName": "Lachelle Stoehr"
     },
     {
       "id": 56,
       "speciality": "Neurologist",
-      "doctor_name": "Dyan Mancuso"
+      "doctorName": "Dyan Mancuso"
     },
     {
       "id": 57,
       "speciality": "Radiologist",
-      "doctor_name": "Delana Claggett"
+      "doctorName": "Delana Claggett"
     },
     {
       "id": 58,
       "speciality": "Anesthesiologist",
-      "doctor_name": "Betty Dilday"
+      "doctorName": "Betty Dilday"
     },
     {
       "id": 59,
       "speciality": "Surgeon",
-      "doctor_name": "Valentine Strohm"
+      "doctorName": "Valentine Strohm"
     },
     {
       "id": 60,
       "speciality": "Physician Executive",
-      "doctor_name": "Elanor Mcsween"
+      "doctorName": "Elanor Mcsween"
     },
     {
       "id": 61,
       "speciality": "Family Physician",
-      "doctor_name": "Shane Bail"
+      "doctorName": "Shane Bail"
     },
     {
       "id": 62,
       "speciality": "Internal Medicine Physician",
-      "doctor_name": "Basilia Damore"
+      "doctorName": "Basilia Damore"
     },
     {
       "id": 63,
       "speciality": "Pediatrician",
-      "doctor_name": "Marissa Edwards"
+      "doctorName": "Marissa Edwards"
     },
     {
       "id": 64,
       "speciality": "Gynecologist",
-      "doctor_name": "Shon Saechao"
+      "doctorName": "Shon Saechao"
     },
     {
       "id": 65,
       "speciality": "Cardiologist",
-      "doctor_name": "Jodie Ooten"
+      "doctorName": "Jodie Ooten"
     },
     {
       "id": 66,
       "speciality": "Oncologist",
-      "doctor_name": "Felipa Southward"
+      "doctorName": "Felipa Southward"
     },
     {
       "id": 67,
       "speciality": "Gastroenterologist",
-      "doctor_name": "Lia Merriweather"
+      "doctorName": "Lia Merriweather"
     },
     {
       "id": 68,
       "speciality": "Pulmonologist",
-      "doctor_name": "Nick Fahy"
+      "doctorName": "Nick Fahy"
     },
     {
       "id": 69,
       "speciality": "Infectious Disease Physician",
-      "doctor_name": "Katina Patch"
+      "doctorName": "Katina Patch"
     },
     {
       "id": 70,
       "speciality": "Nephrologist",
-      "doctor_name": "Spring Mcelyea"
+      "doctorName": "Spring Mcelyea"
     },
     {
       "id": 71,
       "speciality": "Endocrinologist",
-      "doctor_name": "Johnette Blackmore"
+      "doctorName": "Johnette Blackmore"
     },
     {
       "id": 72,
       "speciality": "Ophthalmologist",
-      "doctor_name": "Hae Duenes"
+      "doctorName": "Hae Duenes"
     },
     {
       "id": 73,
       "speciality": "Otolaryngo logist",
-      "doctor_name": "Lorette Wheeler"
+      "doctorName": "Lorette Wheeler"
     },
     {
       "id": 74,
       "speciality": "Dermatologist",
-      "doctor_name": "Frederic Rosalez"
+      "doctorName": "Frederic Rosalez"
     },
     {
       "id": 75,
       "speciality": "Psychiatrist",
-      "doctor_name": "Rodolfo Figueiredo"
+      "doctorName": "Rodolfo Figueiredo"
     },
     {
       "id": 76,
       "speciality": "Neurologist",
-      "doctor_name": "Tajuana Trenholm"
+      "doctorName": "Tajuana Trenholm"
     },
     {
       "id": 77,
       "speciality": "Radiologist",
-      "doctor_name": "Joane Luby"
+      "doctorName": "Joane Luby"
     },
     {
       "id": 78,
       "speciality": "Anesthesiologist",
-      "doctor_name": "Carolann Primrose"
+      "doctorName": "Carolann Primrose"
     },
     {
       "id": 79,
       "speciality": "Surgeon",
-      "doctor_name": "Towanda Simeone"
+      "doctorName": "Towanda Simeone"
     },
     {
       "id": 80,
       "speciality": "Physician Executive",
-      "doctor_name": "Ruben Wragg"
+      "doctorName": "Ruben Wragg"
     },
     {
       "id": 81,
       "speciality": "Family Physician",
-      "doctor_name": "Donella Mcguigan"
+      "doctorName": "Donella Mcguigan"
     },
     {
       "id": 82,
       "speciality": "Internal Medicine Physician",
-      "doctor_name": "Cathie Litchford"
+      "doctorName": "Cathie Litchford"
     },
     {
       "id": 83,
       "speciality": "Pediatrician",
-      "doctor_name": "Deonna Varghese"
+      "doctorName": "Deonna Varghese"
     },
     {
       "id": 84,
       "speciality": "Gynecologist",
-      "doctor_name": "Odessa Lisby"
+      "doctorName": "Odessa Lisby"
     },
     {
       "id": 85,
       "speciality": "Cardiologist",
-      "doctor_name": "Norbert Montez"
+      "doctorName": "Norbert Montez"
     },
     {
       "id": 86,
       "speciality": "Oncologist",
-      "doctor_name": "Estella Albanese"
+      "doctorName": "Estella Albanese"
     },
     {
       "id": 87,
       "speciality": "Gastroenterologist",
-      "doctor_name": "Carole Hoos"
+      "doctorName": "Carole Hoos"
     },
     {
       "id": 88,
       "speciality": "Pulmonologist",
-      "doctor_name": "Yuko Leer"
+      "doctorName": "Yuko Leer"
     },
     {
       "id": 89,
       "speciality": "Infectious Disease Physician",
-      "doctor_name": "Rosamond Rorick"
+      "doctorName": "Rosamond Rorick"
     },
     {
       "id": 90,
       "speciality": "Nephrologist",
-      "doctor_name": "Roxana Ploss"
+      "doctorName": "Roxana Ploss"
     },
     {
       "id": 91,
       "speciality": "Endocrinologist",
-      "doctor_name": "Milagros Berner"
+      "doctorName": "Milagros Berner"
     },
     {
       "id": 92,
       "speciality": "Ophthalmologist",
-      "doctor_name": "Cindy Harward"
+      "doctorName": "Cindy Harward"
     },
     {
       "id": 93,
       "speciality": "Otolaryngo logist",
-      "doctor_name": "Alison Yohe"
+      "doctorName": "Alison Yohe"
     },
     {
       "id": 94,
       "speciality": "Dermatologist",
-      "doctor_name": "Maura Devos"
+      "doctorName": "Maura Devos"
     },
     {
       "id": 95,
       "speciality": "Psychiatrist",
-      "doctor_name": "Esther Rinke"
+      "doctorName": "Esther Rinke"
     },
     {
       "id": 96,
       "speciality": "Neurologist",
-      "doctor_name": "Bernadette Ismail"
+      "doctorName": "Bernadette Ismail"
     },
     {
       "id": 97,
       "speciality": "Radiologist",
-      "doctor_name": "Eleonore Groom"
+      "doctorName": "Eleonore Groom"
     },
     {
       "id": 98,
       "speciality": "Anesthesiologist",
-      "doctor_name": "Kathleen Dunkel"
+      "doctorName": "Kathleen Dunkel"
     },
     {
       "id": 99,
       "speciality": "Surgeon",
-      "doctor_name": "Tessa Nalls"
+      "doctorName": "Tessa Nalls"
     },
     {
       "id": 100,
       "speciality": "Physician Executive",
-      "doctor_name": "Adrien Goetz"
+      "doctorName": "Adrien Goetz"
     },
     {
       "id": 101,
       "speciality": "Family Physician",
-      "doctor_name": "Betsy Younker"
+      "doctorName": "Betsy Younker"
     },
     {
       "id": 102,
       "speciality": "Internal Medicine Physician",
-      "doctor_name": "So Asaro"
+      "doctorName": "So Asaro"
     },
     {
       "id": 103,
       "speciality": "Pediatrician",
-      "doctor_name": "Tifany Walkins"
+      "doctorName": "Tifany Walkins"
     },
     {
       "id": 104,
       "speciality": "Gynecologist",
-      "doctor_name": "Shavonda Obermiller"
+      "doctorName": "Shavonda Obermiller"
     },
     {
       "id": 105,
       "speciality": "Cardiologist",
-      "doctor_name": "Reyes Kessler"
+      "doctorName": "Reyes Kessler"
     },
     {
       "id": 106,
       "speciality": "Oncologist",
-      "doctor_name": "Tiny Piland"
+      "doctorName": "Tiny Piland"
     },
     {
       "id": 107,
       "speciality": "Gastroenterologist",
-      "doctor_name": "Beatrice Taff"
+      "doctorName": "Beatrice Taff"
     },
     {
       "id": 108,
       "speciality": "Pulmonologist",
-      "doctor_name": "Felice Core"
+      "doctorName": "Felice Core"
     },
     {
       "id": 109,
       "speciality": "Infectious Disease Physician",
-      "doctor_name": "Brianna Krum"
+      "doctorName": "Brianna Krum"
     },
     {
       "id": 110,
       "speciality": "Nephrologist",
-      "doctor_name": "Andria Noel"
+      "doctorName": "Andria Noel"
     },
     {
       "id": 111,
       "speciality": "Endocrinologist",
-      "doctor_name": "Delena Matchett"
+      "doctorName": "Delena Matchett"
     },
     {
       "id": 112,
       "speciality": "Ophthalmologist",
-      "doctor_name": "Shannan Fonville"
+      "doctorName": "Shannan Fonville"
     },
     {
       "id": 113,
       "speciality": "Otolaryngo logist",
-      "doctor_name": "Maryrose Pickering"
+      "doctorName": "Maryrose Pickering"
     },
     {
       "id": 114,
       "speciality": "Dermatologist",
-      "doctor_name": "Claudine Fullilove"
+      "doctorName": "Claudine Fullilove"
     },
     {
       "id": 115,
       "speciality": "Psychiatrist",
-      "doctor_name": "Celestine Alcon"
+      "doctorName": "Celestine Alcon"
     },
     {
       "id": 116,
       "speciality": "Neurologist",
-      "doctor_name": "Deanna Becton"
+      "doctorName": "Deanna Becton"
     },
     {
       "id": 117,
       "speciality": "Radiologist",
-      "doctor_name": "Elena Knick"
+      "doctorName": "Elena Knick"
     },
     {
       "id": 118,
       "speciality": "Anesthesiologist",
-      "doctor_name": "Lakiesha Benito"
+      "doctorName": "Lakiesha Benito"
     },
     {
       "id": 119,
       "speciality": "Surgeon",
-      "doctor_name": "Shondra Agarwal"
+      "doctorName": "Shondra Agarwal"
     },
     {
       "id": 120,
       "speciality": "Physician Executive",
-      "doctor_name": "Chang Gulino"
+      "doctorName": "Chang Gulino"
     },
     {
       "id": 121,
       "speciality": "Family Physician",
-      "doctor_name": "Lecia Heller"
+      "doctorName": "Lecia Heller"
     },
     {
       "id": 122,
       "speciality": "Internal Medicine Physician",
-      "doctor_name": "Kurtis Collyer"
+      "doctorName": "Kurtis Collyer"
     },
     {
       "id": 123,
       "speciality": "Pediatrician",
-      "doctor_name": "Arianne Sandler"
+      "doctorName": "Arianne Sandler"
     },
     {
       "id": 124,
       "speciality": "Gynecologist",
-      "doctor_name": "Letha Vassallo"
+      "doctorName": "Letha Vassallo"
     },
     {
       "id": 125,
       "speciality": "Cardiologist",
-      "doctor_name": "Ola Frick"
+      "doctorName": "Ola Frick"
     },
     {
       "id": 126,
       "speciality": "Oncologist",
-      "doctor_name": "Ralph Lupercio"
+      "doctorName": "Ralph Lupercio"
     },
     {
       "id": 127,
       "speciality": "Gastroenterologist",
-      "doctor_name": "Laree Callahan"
+      "doctorName": "Laree Callahan"
     },
     {
       "id": 128,
       "speciality": "Pulmonologist",
-      "doctor_name": "Duane Capel"
+      "doctorName": "Duane Capel"
     },
     {
       "id": 129,
       "speciality": "Infectious Disease Physician",
-      "doctor_name": "Flo Coaxum"
+      "doctorName": "Flo Coaxum"
     },
     {
       "id": 130,
       "speciality": "Nephrologist",
-      "doctor_name": "Cara Kasprzak"
+      "doctorName": "Cara Kasprzak"
     },
     {
       "id": 131,
       "speciality": "Endocrinologist",
-      "doctor_name": "Tracee Hudkins"
+      "doctorName": "Tracee Hudkins"
     },
     {
       "id": 132,
       "speciality": "Ophthalmologist",
-      "doctor_name": "Zenobia Koepke"
+      "doctorName": "Zenobia Koepke"
     },
     {
       "id": 133,
       "speciality": "Otolaryngo logist",
-      "doctor_name": "Shila Deveaux"
+      "doctorName": "Shila Deveaux"
     },
     {
       "id": 134,
       "speciality": "Dermatologist",
-      "doctor_name": "Audra Escalera"
+      "doctorName": "Audra Escalera"
     },
     {
       "id": 135,
       "speciality": "Psychiatrist",
-      "doctor_name": "Vincent Rearick"
+      "doctorName": "Vincent Rearick"
     },
     {
       "id": 136,
       "speciality": "Neurologist",
-      "doctor_name": "Shantelle Nordstrom"
+      "doctorName": "Shantelle Nordstrom"
     },
     {
       "id": 137,
       "speciality": "Radiologist",
-      "doctor_name": "Edmundo Behringer"
+      "doctorName": "Edmundo Behringer"
     },
     {
       "id": 138,
       "speciality": "Anesthesiologist",
-      "doctor_name": "Patrice Salguero"
+      "doctorName": "Patrice Salguero"
     },
     {
       "id": 139,
       "speciality": "Surgeon",
-      "doctor_name": "Joy Bake"
+      "doctorName": "Joy Bake"
     },
     {
       "id": 140,
       "speciality": "Physician Executive",
-      "doctor_name": "Romeo Northington"
+      "doctorName": "Romeo Northington"
     },
     {
       "id": 141,
       "speciality": "Family Physician",
-      "doctor_name": "Walton Bate"
+      "doctorName": "Walton Bate"
     },
     {
       "id": 142,
       "speciality": "Internal Medicine Physician",
-      "doctor_name": "Lynette Mckeown"
+      "doctorName": "Lynette Mckeown"
     },
     {
       "id": 143,
       "speciality": "Pediatrician",
-      "doctor_name": "Delsie Pitzer"
+      "doctorName": "Delsie Pitzer"
     },
     {
       "id": 144,
       "speciality": "Gynecologist",
-      "doctor_name": "Tamiko Honey"
+      "doctorName": "Tamiko Honey"
     },
     {
       "id": 145,
       "speciality": "Cardiologist",
-      "doctor_name": "Hollie Tapscott"
+      "doctorName": "Hollie Tapscott"
     },
     {
       "id": 146,
       "speciality": "Oncologist",
-      "doctor_name": "Zelda Denis"
+      "doctorName": "Zelda Denis"
     },
     {
       "id": 147,
       "speciality": "Gastroenterologist",
-      "doctor_name": "Leora Murdoch"
+      "doctorName": "Leora Murdoch"
     },
     {
       "id": 148,
       "speciality": "Pulmonologist",
-      "doctor_name": "Karisa Burritt"
+      "doctorName": "Karisa Burritt"
     },
     {
       "id": 149,
       "speciality": "Infectious Disease Physician",
-      "doctor_name": "Myesha Bartolotta"
+      "doctorName": "Myesha Bartolotta"
     },
     {
       "id": 150,
       "speciality": "Nephrologist",
-      "doctor_name": "Alesha Hopping"
+      "doctorName": "Alesha Hopping"
     },
     {
       "id": 151,
       "speciality": "Endocrinologist",
-      "doctor_name": "Vashti Lipham"
+      "doctorName": "Vashti Lipham"
     },
     {
       "id": 152,
       "speciality": "Ophthalmologist",
-      "doctor_name": "Veda Thayer"
+      "doctorName": "Veda Thayer"
     },
     {
       "id": 153,
       "speciality": "Otolaryngo logist",
-      "doctor_name": "Willetta Rott"
+      "doctorName": "Willetta Rott"
     },
     {
       "id": 154,
       "speciality": "Dermatologist",
-      "doctor_name": "Theresia Mabrey"
+      "doctorName": "Theresia Mabrey"
     },
     {
       "id": 155,
       "speciality": "Psychiatrist",
-      "doctor_name": "Keva Bailes"
+      "doctorName": "Keva Bailes"
     },
     {
       "id": 156,
       "speciality": "Neurologist",
-      "doctor_name": "Ed Guyette"
+      "doctorName": "Ed Guyette"
     },
     {
       "id": 157,
       "speciality": "Radiologist",
-      "doctor_name": "Sherika Staples"
+      "doctorName": "Sherika Staples"
     },
     {
       "id": 158,
       "speciality": "Anesthesiologist",
-      "doctor_name": "Ardelia Borrero"
+      "doctorName": "Ardelia Borrero"
     },
     {
       "id": 159,
       "speciality": "Surgeon",
-      "doctor_name": "Bethanie Esterline"
+      "doctorName": "Bethanie Esterline"
     },
     {
       "id": 160,
       "speciality": "Physician Executive",
-      "doctor_name": "Coral Hatley"
+      "doctorName": "Coral Hatley"
     }
   ]
 
-const sampleData = {banners, doctors, specialities, doctor_icon}
+const sampleData = {banners, doctors, specialities, doctorIcon, arrowIcon}
 
 export default sampleData;
