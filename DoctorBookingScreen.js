@@ -2,10 +2,12 @@ import React from 'react';
 import { Button } from 'react-native';
 import { ScrollView } from 'react-native';
 import { TouchableOpacity } from 'react-native';
-import { StyleSheet, Text, View, Image} from 'react-native';
+import { StyleSheet, Text, View, Image, Linking} from 'react-native';
 import sampleData from './SampleData';
+import { useTheme } from '@react-navigation/native';
 
 const DoctorBookingScreen = ({route, navigation}) => {
+    const { colors } = useTheme();
     
     const {doctorId} = route.params
     const getDoctor = (doctorId) =>{
@@ -18,26 +20,28 @@ const DoctorBookingScreen = ({route, navigation}) => {
     const doctorData = getDoctor(doctorId);
 
     return(
-        <View style={{flex:1, padding:'3%'}}>
-            <View style={{flex:2, backgroundColor:'red', flexDirection:'row', marginBottom:'3%'}}>
-                <View style={{flex:1, backgroundColor:'grey'}}>
+        <View style={{flex:1, padding:'3%', backgroundColor:colors.background}}>
+            <View style={{flex:2, backgroundColor:colors.backgroundAlternative, flexDirection:'row', marginBottom:'3%', borderRadius:10}}>
+                <View style={{flex:1, paddingVertical:'2%'}}>
                     <Image style={{width:'100%', height:'100%', resizeMode:'contain'}} source={{uri:sampleData.doctorIcon}}/>
                 </View>
-                <View style={{flex:1, backgroundColor:'yellow'}}>
-                    <Text>{doctorData.doctorName}</Text>
-                    <Text>{doctorData.speciality}</Text>
+                <View style={{flex:1}}>
+                    <Text style={{fontSize:20}}>{doctorData.doctorName}</Text>
+                    <Text styel>{doctorData.speciality}</Text>
                     <Text/>
-                    <Text>Avalaibe</Text>
+                    <Text >Avalaibe</Text>
                 </View>
             </View>
-            <View style={{flex:4, backgroundColor:'green', marginBottom:'3%'}}>
-                <ScrollView style={{padding:'3%'}}>
-                    <Text>{sampleData.loremIpsum}</Text>
+            <View style={{flex:4, backgroundColor:colors.backgroundAlternative, marginBottom:'3%', borderRadius:10}}>
+                <ScrollView style={{paddingHorizontal:'3%', paddingTop:'3%'}}>
+                    <Text style={{marginBottom:'6%'}}>{sampleData.loremIpsum}</Text>
                 </ScrollView>
             </View>
-            <View style={{flex:1, backgroundColor:'blue', flexDirection:'column-reverse', marginBottom:'3%'}}>
-                <TouchableOpacity style={{backgroundColor:'grey'}}>
-                    <Text style={{textAlign:'center'}}>Make An Appointment</Text>
+            <View style={{flex:1/2, flexDirection:'column-reverse', marginBottom:'3%'}}>
+                <TouchableOpacity onPress={()=>{
+                    Linking.openURL('https://wa.me/6281358896186/?text=teslagi');
+                }} style={{backgroundColor:colors.primaryAlternative, borderRadius:5, padding:'2%'}}>
+                    <Text style={{textAlign:'center', color:colors.onPrimary, fontSize:20}}>Make An Appointment</Text>
                 </TouchableOpacity>
             </View>
         </View>
