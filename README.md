@@ -1,4 +1,6 @@
 # SnK-Consultation  
+
+
 ## To-Do  
 ~~create github~~  
 ~~create bare screen~~  
@@ -17,5 +19,11 @@
 ~~page 4 fine tune layout~~  
 ~~theme styleing~~  
 ~~theme color choosing~~  
-github wiki   
 ~~bug page 3 speciality into doctor list, data supposed to be filtered consistently~~  
+github wiki :  
+
+screen explain parameter, variable, function, custom component : 
+
+
+add more comment on obscure code
+separate cluttered styling
