@@ -21,9 +21,12 @@
 ~~theme color choosing~~  
 ~~bug page 3 speciality into doctor list, data supposed to be filtered consistently~~  
 github wiki :  
-
-screen explain parameter, variable, function, custom component : 
-
+  - screen explain parameter, variable, function, custom component : 
+    - App
+    - HomeScreen
+    - SpecialityListScreen
+    - DoctorListScreen
+  - explain that detail will be in comment in code files
 
 add more comment on obscure code
 separate cluttered styling
