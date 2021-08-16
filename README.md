@@ -146,15 +146,15 @@ Online Health Consultation Service
 ~~theme styleing~~  
 ~~theme color choosing~~  
 ~~bug page 3 speciality into doctor list, data supposed to be filtered consistently~~  
-github wiki :  
-  - screen explain parameter, variable, function, custom component : 
-    - App  
-    - HomeScreen  
-    - SpecialityListScreen  
-    - DoctorListScreen  
+~~github wiki :~~  
+  - ~~screen explain parameter, variable, function, custom component :~~  
+    - ~~App~~  
+    - ~~HomeScreen~~  
+    - ~~SpecialityListScreen~~  
+    - ~~DoctorListScreen~~  
   
-explain that detail will be in comment in code files
-explain sampleData
+~~explain that detail will be in comment in code files~~  
+~~explain sampleData~~  
 
-add more comment on obscure code
-separate cluttered styling  
+~~add more comment on obscure code~~  
+~~separate cluttered styling~~  
