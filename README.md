@@ -9,10 +9,10 @@ show screenshot and gif
   [go to top](#snk-consultation)
   
 ### App.js
-  #### `myTheme`  
-    color scheme app
-  #### `NavigationContainer`
-    container untuk routing screen dan header option
+  #### myTheme  
+   color scheme app
+  #### NavigationContainer
+   container untuk routing screen dan header option
 ### SampleData.js
   #### banners
     link image banner
