@@ -1,9 +1,57 @@
 # SnK-Consultation  
-
-
+explain what app do  
+  
+## Showcase  
+show screenshot and gif  
+  
+## Documentation
+### Table of Contents
+  [go to top](#snk-consultation)
+  
+### App.js
+  #### `myTheme`
+  #### `NavigationContainer`
+### SampleData.js
+  #### banners
+  #### doctorIcon
+  #### arrowIcon
+  #### loremIpsum
+  #### specialities
+  #### doctors
+### HomeScreen.js
+  #### colors
+  #### PromotionCarousel.js
+  #### SpecialityBit
+  #### DoctorsBit
+### SpecialityListScreen.js
+  #### colors
+  #### refresh
+  #### dataCache
+  #### filterSpecialities()
+  #### ItemDesign
+  #### SearchBar
+  #### FlatList
+### DoctorListScreen.js
+  #### colors
+  #### specialityName
+  #### refresh
+  #### dataCache
+  #### dataFilteredSpeciality
+  #### dataFilteredName
+  #### filterSpeciality()
+  #### filterName()
+  #### ItemDesign
+  #### SearchBar
+  #### FlatList
+### DoctorBookingScreen.js
+  #### colors
+  #### doctorId
+  #### getDoctor()
+  #### Linking
+ 
 
 ## To-Do  
-~~create github~~  
+~~create github
 ~~create bare screen~~  
 ~~page 1 carousel~~  
 ~~collecting dummy data~~  
@@ -23,13 +71,13 @@
 ~~bug page 3 speciality into doctor list, data supposed to be filtered consistently~~  
 github wiki :  
   - screen explain parameter, variable, function, custom component : 
-    - App
-    - HomeScreen
-    - SpecialityListScreen
-    - DoctorListScreen
-  - explain that detail will be in comment in code files
-  - explain sampleData
+    - App  
+    - HomeScreen  
+    - SpecialityListScreen  
+    - DoctorListScreen  
+  
+explain that detail will be in comment in code files
+explain sampleData
 
 add more comment on obscure code
 separate cluttered styling  
-[go to top](#snk-consultation)
