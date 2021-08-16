@@ -9,7 +9,7 @@ show screenshot and gif
   [go to top](#snk-consultation)
   
 ### App.js
-  #### `myTheme` 
+  #### myTheme  
     color scheme aplikasi
   #### `NavigationContainer`
 ### SampleData.js
