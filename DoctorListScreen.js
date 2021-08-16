@@ -8,11 +8,16 @@ import { useTheme } from '@react-navigation/native';
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
 const DoctorListScreen = ({route, navigation}) => {
+    // access color's theme
     const { colors } = useTheme();
+    // get speciality name parameter
     const {specialityName} = route.params
+    // refresh
     const [refresh, setRefresh] = useState(false);
+    // original data
     const [dataCache, setDataCache] = useState(sampleData.doctors.slice());
     
+    // filter speciality
     const filterSpeciality = (specialityName) => {
         if(specialityName=='Doctor') return dataCache;
         const result=[]
@@ -24,9 +29,12 @@ const DoctorListScreen = ({route, navigation}) => {
         return result;
     }
 
+    // data after filtered speciality
     const [dataFilteredSpeciality, setDataFilteredSpeciality] = useState(filterSpeciality(specialityName));
+    // data after filtered name  // data changed from changed search bar
     const [dataFilteredName, setDataFilteredName] = useState(dataFilteredSpeciality);
 
+    // filter name // from search bar
     const filterName = (keyword) => {
         const result = []
         for (let i = 0; i < dataFilteredSpeciality.length; i++) {
@@ -36,8 +44,9 @@ const DoctorListScreen = ({route, navigation}) => {
                 result.push(dataFilteredSpeciality[i])
             }
         }
+        // update data
         setDataFilteredName(result)
-        //refresh listview
+        // refresh listview
         setRefresh(!refresh);
     }
 
@@ -60,9 +69,10 @@ const DoctorListScreen = ({route, navigation}) => {
     }    
 
     return(
-        <View style={{flex: 1, backgroundColor: colors.background, alignItems: 'center', paddingVertical:'3%'}}>
+        <View style={[{backgroundColor: colors.background},styles.container]}>
             <SearchBar
                 placeholder="Search here"
+                // filter name when text changed
                 onChangeText={ text => filterName(text)}
                 style={{marginBottom:5}}
             />
@@ -82,6 +92,11 @@ const DoctorListScreen = ({route, navigation}) => {
 export default DoctorListScreen;
 
 const styles = StyleSheet.create({
+    container:{
+        flex: 1, 
+        alignItems: 'center', 
+        paddingVertical:'3%'
+    },
     flatlistContainer:{
         width:SCREEN_WIDTH*97/100,
     },

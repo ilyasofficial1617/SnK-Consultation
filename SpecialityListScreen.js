@@ -5,34 +5,37 @@ import SearchBar from "react-native-dynamic-search-bar";
 import { useTheme } from '@react-navigation/native';
 
 const SpecialityListScreen = ({navigation}) => {
+    // access color's theme
     const { colors } = useTheme();
+    // refresh or re render flatlist
     const [refresh, setRefresh] = useState(false);
+    // rendered data
     const [dataCache, setDataCache] = useState(sampleData.specialities.slice());
 
+    // searching specialities
     const filterSpecialities = (keyword) => {
-        console.log(dataCache)
         const result = []
         for (let i = 0; i < sampleData.specialities.length; i++) {
             let check = sampleData.specialities[i].speciality.toLowerCase();
             let keycheck = keyword.toLowerCase();
+            // check if a portion string exist
             if(check.includes(keycheck)){
-                console.log(check)
                 result.push(sampleData.specialities[i])
             }
         }
+        // updated data cache
         setDataCache(result)
-        //refresh listview
+        // refresh flatlist
         setRefresh(!refresh);
     }
     
+    // item
     const ItemDesign = (item) =>{
         return(
-            <TouchableOpacity style={[styles.flatlistItem,{backgroundColor:colors.backgroundAlternative,borderColor:colors.backgroundAlternative,}]}
+            <TouchableOpacity style={styles.flatlistItem}
                 onPress={()=>{
-                    console.log(item.speciality)
                     navigation.navigate('Doctor List',{specialityName : item.speciality});
-                }}
-                > 
+                }}> 
                 <Image style={{width:100, height:100}} source={{uri:sampleData.doctorIcon}}/>
                 <Text style={{textAlign:'center', }} >{item.speciality}</Text>
             </TouchableOpacity>
@@ -42,9 +45,9 @@ const SpecialityListScreen = ({navigation}) => {
     return(
         <View style={{flex: 1, backgroundColor: colors.background, alignItems: 'center', paddingVertical:'3%',justifyContent:'space-around'}}>
             <SearchBar
-                placeholder="Search here"
+                placeholder="Search here" style={{marginBottom:5}}
+                // filter when text changed
                 onChangeText={ text => filterSpecialities(text)}
-                style={{marginBottom:5}}
             />
             <FlatList
                     removeClippedSubviews={false}
@@ -83,6 +86,8 @@ const styles = StyleSheet.create({
         borderWidth:1,
         borderRadius:5,
         padding:5,
+        backgroundColor:'white',
+        borderColor:'white'
         
     }
   });

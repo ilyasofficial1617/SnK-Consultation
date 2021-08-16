@@ -4,9 +4,9 @@ import PromotionCarousel from './PromotionCarousel';
 import sampleData from './SampleData';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { useTheme } from '@react-navigation/native';
-import { colors } from 'react-native-elements';
 
 const HomeScreen = ({navigation}) => {
+    //access color's theme
     const { colors } = useTheme();
     return(
         <View style={[styles.container,{backgroundColor:colors.background}]}>
@@ -22,15 +22,18 @@ const HomeScreen = ({navigation}) => {
 export default HomeScreen;
 
 const SpecialityBit = ({navigation}) => {
+    // limit show 3 speciality
     const specialities = sampleData.specialities.slice(0,3);
 
     return(
         <View style={{flex: 2.7, flexWrap: 'wrap', flexDirection:'row'}}>
             {
+                //map data into item
                 specialities.map((item)=>(
                     <TouchableOpacity onPress={()=>{
+                        //go to doctor list with speciality parameter
                         navigation.navigate('Doctor List',{ specialityName : item.speciality});
-                    }} key={item.id} style={{width: '30%', backgroundColor:'white', flexGrow:1, alignItems:'center', marginBottom:5, padding:10, marginHorizontal:2, borderRadius:5}}>
+                    }} key={item.id} style={styles.specialityItemBit}>
                         <Image style={{width:100, height:100}} source={{uri:sampleData.doctorIcon}}/>
                         <Text style={{textAlign:'center'}}>
                             {item.speciality}
@@ -42,6 +45,7 @@ const SpecialityBit = ({navigation}) => {
             }
             <View style={{flexGrow:1}}>
                 <TouchableOpacity onPress={()=>{
+                    //go to doctor list
                     navigation.navigate('Speciality List');
                 }} style={{ backgroundColor:'white', flexGrow:1,paddingVertical:2}}>
                     <Text style={{textAlign:'center'}}>See All</Text>
@@ -59,8 +63,9 @@ const DoctorsBit = ({navigation}) => {
             {
                 doctors.map((item)=>(
                     <TouchableOpacity onPress={()=>{
+                        //go to doctor booking with doctor id parameter
                         navigation.navigate('Doctor Booking',{doctorId : item.id});
-                    }} key={item.id} style={{width: '100%', flexDirection:'row', alignItems:'center', backgroundColor:colors.backgroundAlternative, padding:5, marginBottom:5, borderRadius:5}}>
+                    }} key={item.id} style={styles.doctorItemBit}>
                         <Image style={{width:30, height:30}} source={{uri:sampleData.doctorIcon}}/>
                         <Text>
                             {item.doctorName}
@@ -71,6 +76,7 @@ const DoctorsBit = ({navigation}) => {
                 
             }
             <TouchableOpacity onPress={()=>{
+                    //go to doctor list
                     navigation.navigate('Doctor List');
                 }} style={{ backgroundColor:'white', flexGrow:1,paddingVertical:2}}>
                 <Text style={{textAlign:'center'}}>See All</Text>
@@ -87,4 +93,23 @@ const styles = StyleSheet.create({
         paddingVertical:'3%',
         justifyContent:'space-around'
     },
+    specialityItemBit : {
+        width: '30%', 
+        backgroundColor:'white', 
+        flexGrow:1, 
+        alignItems:'center', 
+        marginBottom:5, 
+        padding:10, 
+        marginHorizontal:2, 
+        borderRadius:5
+    },
+    doctorItemBit : {
+        width: '100%', 
+        flexDirection:'row', 
+        alignItems:'center', 
+        backgroundColor:'white', 
+        padding:5, 
+        marginBottom:5, 
+        borderRadius:5
+    }
   });

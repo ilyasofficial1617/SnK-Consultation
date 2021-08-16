@@ -10,6 +10,7 @@ import DoctorBookingScreen from './DoctorBookingScreen';
 const Stack = createNativeStackNavigator();
 
 const App = () => {
+  //color theme
   const myTheme = {
     dark: false,
     colors: {
@@ -30,17 +31,23 @@ const App = () => {
   let selectedTheme = myTheme;
 
   return (
+    //navigation  //pass theme into screen
     <NavigationContainer theme={selectedTheme}>
       <Stack.Navigator 
         initialRouteName="Home"
+        //set header color to theme
         screenOptions={{
           headerStyle:{backgroundColor:selectedTheme.colors.primary}, 
           headerTintColor:selectedTheme.colors.onPrimary,
         }}
+        //screens
       >
         <Stack.Screen name="Home" options={{title:"SnK Consultation"}}  component={HomeScreen}/>
         <Stack.Screen name="Speciality List" options={{title:"Specialities"}} component={SpecialityListScreen}/>
-        <Stack.Screen name="Doctor List" initialParams={{specialityName:'Doctor'}} options={({route})=>({title: route.params.specialityName})} component={DoctorListScreen}/>
+        <Stack.Screen name="Doctor List" component={DoctorListScreen}
+          //change header title based on specialityName
+          options={({route})=>({title: route.params.specialityName})} 
+          initialParams={{specialityName:'Doctor'}}/>
         <Stack.Screen name="Doctor Booking" options={{title:"Booking"}} component={DoctorBookingScreen}/>
       </Stack.Navigator>
     </NavigationContainer> 
