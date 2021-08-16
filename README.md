@@ -12,8 +12,10 @@ show screenshot and gif
   #### myTheme  
     color scheme aplikasi
   #### `NavigationContainer`
+  container untuk routing screen dan header option
 ### SampleData.js
   #### banners
+  
   #### doctorIcon
   #### arrowIcon
   #### loremIpsum
