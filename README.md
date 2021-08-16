@@ -128,7 +128,7 @@ Online Health Consultation Service
  
 
 ## To-Do  
-~~create github
+~~create github~~  
 ~~create bare screen~~  
 ~~page 1 carousel~~  
 ~~collecting dummy data~~  
