@@ -10,9 +10,9 @@ show screenshot and gif
   
 ### App.js
   #### myTheme  
-   color scheme app
+  > color scheme app
   #### NavigationContainer
-   container untuk routing screen dan header option
+  > container untuk routing screen dan header option
 ### SampleData.js
   #### banners
     link image banner
