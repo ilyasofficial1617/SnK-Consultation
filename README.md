@@ -40,7 +40,13 @@ Online Health Consultation Service
   
 ## Documentation
 ### Table of Contents
-  [go to top](#snk-consultation)
+  [App](#appjs)  
+  [SampleData](#sampledatajs)  
+  [HomeScreen](#homescreenjs)  
+  [SpecialityListScreen.js](#specialitylistscreenjs)  
+  [DoctorListScreen](#doctorlistscreenjs)  
+  [DoctorBookingScreen](#doctorbookingscreenjs)  
+  
   
 ### App.js
   #### `myTheme`  
