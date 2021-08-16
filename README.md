@@ -54,7 +54,7 @@ show screenshot and gif
   #### `colors`
   > access to current color's theme
   #### `specialityName`
-  > selected speciality name from received parameter.
+  > selected speciality name from received parameter.  
   > default speciality name is 'doctor', which won't filter any doctor
   #### `refresh`
   > state variable for signalling flatlist re-render
@@ -73,8 +73,8 @@ show screenshot and gif
   #### `SearchBar`
   > search bar to get query form user input, then pass query into `filterSpeciality()`
   #### `FlatList`
-  > showing inside of `dataFilteredName`.
-  > `dataCache` filtered into `dataFilteredSpeciality`
+  > showing inside of `dataFilteredName`.  
+  > `dataCache` filtered into `dataFilteredSpeciality`  
   > `dataFilteredSpeciality` filtered with search box query, into `dataFilteredName`
 ### DoctorBookingScreen.js
   #### `colors`
