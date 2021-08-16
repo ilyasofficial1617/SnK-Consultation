@@ -2,20 +2,40 @@
 Online Health Consultation Service  
   
 ## Showcase  
-![Image of Home Screen](https://drive.google.com/uc?export=download&id=19n20a9_1epELefQ0iJEZZD4waXc8q6LF)  
+<img src="https://drive.google.com/uc?export=download&id=19n20a9_1epELefQ0iJEZZD4waXc8q6LF" width=25% height=25%>  
+  
 > image of home screen  
-![Image of Specialities Screen](https://drive.google.com/uc?export=download&id=19oX8BRJfJ1Puwjkzgj3gpmeVrO-OfMLc)  
+<br>  
+
+<img src="https://drive.google.com/uc?export=download&id=19oX8BRJfJ1Puwjkzgj3gpmeVrO-OfMLc" width=25% height=25%>  
+  
 > Image of Specialities Screen  
-![Image of Home Screen](https://drive.google.com/uc?export=download&id=1ANCMGeT8g0EKfA543HVXMBFRQl-O9V0l)  
+<br>  
+
+<img src="https://drive.google.com/uc?export=download&id=1ANCMGeT8g0EKfA543HVXMBFRQl-O9V0l" width=25% height=25%>  
+  
 > Image of Specialities Screen with Searching  
-![Image of Doctors List](https://drive.google.com/uc?export=download&id=19vhAofsPL3KXXwN8nREJC2klAL73_GZ7)  
+<br>  
+
+<img src="https://drive.google.com/uc?export=download&id=19vhAofsPL3KXXwN8nREJC2klAL73_GZ7" width=25% height=25%>  
+  
 > Image of Doctors List  
-![Image of Doctors List from a Speciality](https://drive.google.com/uc?export=download&id=1A5NnBfVkbq9McFaAOf0zqs1AYgFfErO_)  
+<br>  
+
+<img src="https://drive.google.com/uc?export=download&id=1A5NnBfVkbq9McFaAOf0zqs1AYgFfErO_" width=25% height=25%>  
+  
 > Image of Doctors List from a Speciality  
-![Image of Doctors List from a Speciality with Searching](https://drive.google.com/uc?export=download&id=1AET_BZFI3QGrNt0if0X5xW8JFMUW8HqD)  
+<br>  
+
+<img src="https://drive.google.com/uc?export=download&id=1AET_BZFI3QGrNt0if0X5xW8JFMUW8HqD" width=25% height=25%>  
+  
 > Image of Doctors List from a Speciality with Searching  
-![Image of Doctor Booking](https://drive.google.com/uc?export=download&id=1A2ic-ISAihsRBaclhtzILTeSqDeCu5xn)  
+<br>  
+
+<img src="https://drive.google.com/uc?export=download&id=1A2ic-ISAihsRBaclhtzILTeSqDeCu5xn" width=25% height=25%>  
+  
 > Image of Doctor Booking  
+<br>  
 
   
 ## Documentation
