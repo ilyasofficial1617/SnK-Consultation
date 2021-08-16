@@ -9,75 +9,82 @@ show screenshot and gif
   [go to top](#snk-consultation)
   
 ### App.js
-  #### myTheme  
+  #### `myTheme`  
   > color scheme app
-  #### NavigationContainer
+  #### `NavigationContainer`
   > container untuk routing screen dan header option
 ### SampleData.js
-  #### banners
-    link image banner
-  #### doctorIcon
-    link image doctor icon
-  #### arrowIcon
-    link image arrow icon
-  #### loremIpsum
-    data string lorem ipsum
-  #### specialities
-    data json specialities
-  #### doctors
-    data json doctor's name and speciality
+  #### `banners`
+  > link image banner
+  #### `doctorIcon`
+  > link image doctor icon
+  #### `arrowIcon`
+  > link image arrow icon
+  #### `loremIpsum`
+  > data string lorem ipsum
+  #### `specialities`
+  > data json specialities
+  #### `doctors`
+  > data json doctor's name and speciality
 ### HomeScreen.js
-  #### colors
-    access to current color's theme
-  #### PromotionCarousel.js
-    image slider showing photos of promotions
-  #### SpecialityBit
-    list of a bit (3 item) of specialities for quick access from home
-  #### DoctorsBit
-    list of a bit (5 item) of doctors for quick access from home
+  #### `colors`
+  > access to current color's theme
+  #### `PromotionCarousel.js`
+  > image slider showing photos of promotions
+  #### `SpecialityBit`
+  > list of a bit (3 item) of specialities for quick access from home
+  #### `DoctorsBit`
+  > list of a bit (5 item) of doctors for quick access from home
 ### SpecialityListScreen.js
-  #### colors
-    access to current color's theme
-  #### refresh
-    state variable for signalling flatlist re-render
-  #### dataCache
-    variable for storing data, in this case, data of specialities that matches search query
-  #### filterSpecialities()
-    function for filtering out specialities using query from search box
-  #### ItemDesign
-    item design for each item in flatlist
-  #### SearchBar
-    search bar to get query from user input, then pass query into filterSpecialities()
-  #### FlatList
-    showing inside of specialities data
+  #### `colors`
+  > access to current color's theme
+  #### `refresh`
+  > state variable for signalling flatlist re-render
+  #### `dataCache`
+  > variable for storing data of specialities that matches search query
+  #### `filterSpecialities()`
+  > function for filtering out specialities using query from search box
+  #### `ItemDesign`
+  > item design for each item in flatlist
+  #### `SearchBar`
+  > search bar to get query from user input, then pass query into filterSpecialities()
+  #### `FlatList`
+  > showing inside of specialities data
 ### DoctorListScreen.js
-  #### colors
-    access to current color's theme
-  #### specialityName
-    selected speciality name from received parameter.
-    default speciality name is 'doctor', which won't filter any doctor
-  #### refresh
-    state variable for signalling flatlist re-render
-  #### dataCache
-    variable for storing copy of sample data
-  #### dataFilteredSpeciality
-    variable for storing data after filterSpeciality()
-  #### dataFilteredName
-    variable for storing data after filterName()
-  #### filterSpeciality()
-    function for filtering out specialities using query from parameter specialityName
-  #### filterName()
-    function for filtering out names from `dataFilteredSpeciality` using query from search box
-  #### ItemDesign
-    item desing for each item in flatlist
-  #### SearchBar
-    search bar to get query form user input, then pass query into filter 
-  #### FlatList
+  #### `colors`
+  > access to current color's theme
+  #### `specialityName`
+  > selected speciality name from received parameter.
+  > default speciality name is 'doctor', which won't filter any doctor
+  #### `refresh`
+  > state variable for signalling flatlist re-render
+  #### `dataCache`
+  > variable for storing copy of sample data
+  #### `dataFilteredSpeciality`
+  > variable for storing data after filterSpeciality()
+  #### `dataFilteredName`
+  > variable for storing data after filterName()
+  #### `filterSpeciality()`
+  > function for filtering out specialities using query from parameter specialityName
+  #### `filterName()`
+  > function for filtering out names from `dataFilteredSpeciality` using query from search box
+  #### `ItemDesign`
+  > item design for each item in flatlist
+  #### `SearchBar`
+  > search bar to get query form user input, then pass query into `filterSpeciality()`
+  #### `FlatList`
+  > showing inside of `dataFilteredName`.
+  > `dataCache` filtered into `dataFilteredSpeciality`
+  > `dataFilteredSpeciality` filtered with search box query, into `dataFilteredName`
 ### DoctorBookingScreen.js
-  #### colors
-  #### doctorId
-  #### getDoctor()
-  #### Linking
+  #### `colors`
+  > access to current color's theme
+  #### `doctorId`
+  > selected `doctorId` from received parameter.
+  #### `getDoctor()`
+  > function for finding doctor data from `doctorId`
+  #### `Linking`
+  > linking open whatsapp api for sending message
  
 
 ## To-Do  
